@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'collections',
     loadChildren: () => import('./modules/collections/collections.module').then((m)=>m.CollectionsModule)
   },
-  { path: 'home', component: HomeComponent},
+  { path: '', component: HomeComponent},
   { path: '**', component: NotFoundComponent}
 ];
 
